@@ -25,7 +25,7 @@ export class UsuariosLista {
 
     // Obtener lista de usuarios
     public getLsta() {
-        return this.lista;
+        return this.lista.filter(usuario => usuario.nombre !== 'unknown');
     }
 
     // Obtener un usuario por id
